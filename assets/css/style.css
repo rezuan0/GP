@@ -1,0 +1,173 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3.h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* banner part start  */
+
+#banner {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("../img/hero-bg.jpg") no-repeat center center / cover;
+  text-align: center;
+}
+
+#banner .banner_content h2 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #fff;
+}
+
+#banner .dots {
+  color: #ffc451;
+}
+
+#banner p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+/* #banner .banner_box {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+#banner .box_item {
+  width: 16%;
+  margin: 0 .5rem;
+  border: 1px solid yellow;
+
+
+  padding: 30px 20px;
+transition: ease-in-out 0.3s;
+border: 1px solid rgba(255, 255, 255, 0.3);
+} */
+/* banner part end  */
+
+/* Banner part start  */
+#banner .icon-box {
+  margin: 0.2em;
+  padding: 30px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#banner .icon-box a {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+#banner .icon-box i {
+  font-size: 32px;
+  color: #ffc451;
+  width: 16%;
+}
+/* #banner .icon-box h3 a :hover {
+  color: #ffc451;
+  border: #ffc451;
+} */
+#banner .icon-box :hover {
+  border: #ffc451;
+}
+
+/* Banner part End  */
+
+/* Abut Us Start */
+
+#aboutUs .header h3 {
+  font-size: 28px;
+  color: #444;
+  font-weight: 700;
+}
+#aboutUs .header p {
+  color: #444;
+  font-size: 16px;
+  font-family: "RaleWay" sans-serif;
+  font-style: italic;
+}
+#aboutUs ul {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(82, 82, 82);
+}
+
+#aboutUs .paragraph p {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  padding: 0 0 8px 26px;
+}
+
+#aboutUs img {
+  max-width: 100%;
+  height: auto;
+}
+
+#aboutUs .list i {
+  font-size: 20px;
+  color: #ffc451;
+}
+
+
+/* Abut Us End */
+
+/* clients start  */
+#clients img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* clients end  */
+
+/* team start */
+
+#team {
+  overflow: hidden;
+}
+
+#team .card {
+  position: relative;
+}
+
+#team .social_links {
+  position: absolute;
+  top: 36%;
+  left: 28%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+#team .card:hover .social_links {
+  opacity: 1;
+  visibility: visible;
+}
