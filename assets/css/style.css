@@ -26,6 +26,8 @@ h2,
 h3.h4,
 h5,
 h6 {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-family: "Raleway", sans-serif;
 }
 
@@ -104,6 +106,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 /* Banner part End  */
 
 /* Abut Us Start */
+#aboutUs {
+  overflow: hidden;
+}
 
 #aboutUs .header h3 {
   font-size: 28px;
@@ -137,16 +142,125 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffc451;
 }
 
-
 /* Abut Us End */
 
 /* clients start  */
+#clients {
+  overflow: hidden;
+}
+
 #clients img {
   max-width: 100%;
   height: auto;
 }
 
+#clients .text-h-p h4 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: #444;
+}
+
+#clients .text-h-p p {
+  color: #848484;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#clients .icon {
+  font-size: 48px;
+  color: #ffc451;
+}
 /* clients end  */
+
+/* service part start  */
+
+#service {
+  overflow: hidden;
+}
+
+#service h5 {
+  font-size: 14px;
+  color: #aaa;
+  font-family: "Poppins", sans-serif;
+}
+
+#service h2 {
+  font-family: "Poppins", sans-serif;
+  color: #151515;
+  font-size: 36px;
+  font-weight: 48px;
+}
+
+#service .iconbox {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #ffc451;
+  border-radius: 4px;
+}
+
+#service .iconbox .icon {
+  color: #151515;
+  font-size: 28px;
+  margin: 19px;
+}
+
+#service .box {
+  
+  border: 1px solid #ebebeb;
+  padding: 80px 20px;
+  background: #fff;
+}
+
+#service a{
+  color: #151515;
+  font-size: 24px;
+
+}
+
+#service p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+/* service part end  */
+
+/* call to action part start */
+#callAction {
+  overflow: hidden;
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(2, 2, 2, 0.3), rgba(2, 2, 2, 0.7)),
+    url("/assets/img/cta-bg.jpg") no-repeat center center / cover;
+  text-align: center;
+}
+
+#callAction h3{
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  color: #fff;
+}
+#callAction p{
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+
+#callAction .actionBtn{
+font-family: "Raleway", sans-serif;
+font-size: 16px;
+display: inline-block;
+padding: 1px 30px;
+border-radius: 4px;
+border: 2px solid #fff;
+color: yellow;
+text-align: center;
+}
+
+
+
+/* call to action part end */
 
 /* team start */
 
