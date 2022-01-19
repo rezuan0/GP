@@ -26,6 +26,15 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- cdn's for counter up  -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <!-- custom css  -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
@@ -370,7 +379,6 @@
     <!-- call to action part end  -->
 
     <!-- Portfolio part Start  -->
-
     <section id="portfolio">
       <div class="container mt-5">
         <div>
@@ -628,6 +636,123 @@
     </section>
     <!-- Portfolio part End  -->
 
+    <!-- Counts Section part Start  -->
+    <section id="counts">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="d-flex">
+            <!-- Left part  -->
+            <div class="col-xl-5 space">
+              <img src="/assets/img/counts-img.jpg" alt="Counts Img" />
+            </div>
+            <!-- Right part  -->
+            <div class="col-xl-7">
+              <div class="headPara space">
+                <h3>Voluptatem dignissimos provident quasi</h3>
+                <p class="hPara">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Duis aute irure dolor in reprehenderit
+                </p>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="listPart">
+                      <div class="d-flex">
+                        <div class="icon">
+                          <span
+                            class="iconify icon"
+                            data-icon="bi:emoji-smile"
+                          ></span>
+                        </div>
+                        <span
+                          ><i class="number nFont">65</i>
+                          <div class="pText">
+                            <p>
+                              <strong>Happy Clients</strong> consequuntur
+                              voluptas nostrum aliquid ipsam architecto ut.
+                            </p>
+                          </div>
+                        </span>
+                      </div>
+                      <div class="d-flex">
+                        <div class="icon">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:clock"
+                          ></span>
+                        </div>
+                        <span
+                          ><i class="number nFont">35</i>
+                          <div class="pText">
+                            <p>
+                              <strong>Years of experience</strong> aut commodi
+                              quaerat modi aliquam nam ducimus aut voluptate non
+                              vel
+                            </p>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="listPart">
+                      <div class="d-flex">
+                        <div class="icon">
+                          <span
+                            class="iconify"
+                            data-icon="bi:journal-richtext"
+                          ></span>
+                        </div>
+                        <span
+                          ><i class="number nFont">85</i>
+                          <div class="pText">
+                            <p>
+                              <strong>Projects</strong> adipisci atque cum quia
+                              aspernatur totam laudantium et quia dere tan
+                            </p>
+                          </div>
+                        </span>
+                      </div>
+                      <div class="d-flex">
+                        <div class="icon">
+                          <span
+                            class="iconify icon"
+                            data-icon="bi:emoji-smile"
+                          ></span>
+                        </div>
+                        <span
+                          ><i class="number nFont">20</i>
+                          <div class="pText">
+                            <p>
+                              <strong>Awards</strong> rerum asperiores dolor
+                              alias quo reprehenderit eum et nemo pad der
+                            </p>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counts Section part End  -->
+
+    <!-- Testimonial part Start  -->
+
+    <section id="testimonial" class="mt-5">
+      <div class="container">
+        <div class="text-center">
+          <h3>Slidebar not Updated</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial part End  -->
+
     <!-- team part  -->
     <section id="team" class="py-5">
       <div class="container">
@@ -719,7 +844,17 @@
     ></script>
     <!-- second About Icon  -->
     <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+
+    <!-- cdn's for counts  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <!-- custom js -->
     <script src="assets/js/"></script>
+    <script>
+      $(".number").counterUp({ time: 3000 });
+    </script>
   </body>
 </html>
