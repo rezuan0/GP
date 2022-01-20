@@ -10,7 +10,7 @@
 body {
   font-family: "Raleway", sans-serif;
 }
-a{
+a {
   text-decoration: none;
 }
 ul {
@@ -87,7 +87,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 20px;
   color: #fff;
 }
-#banner .col-md-4{
+#banner .col-md-4 {
   width: 16.33333%;
 }
 
@@ -325,16 +325,21 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 #team .card {
   position: relative;
+  border: none;
 }
 
 #team .social_links {
   position: absolute;
-  top: 61%;
+  top: 60%;
   left: 16%;
-  opacity: 0;
   visibility: hidden;
-  transition: 0.3s;
+  opacity: 0;
   border-radius: 5px;
+}
+
+#team .social_links .fontS{
+  font-size: 18px;
+  
 }
 #team .social_links a {
   margin: 0 3px;
@@ -350,9 +355,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 #team .card:hover .social_links {
   opacity: 1;
+  transition: 1s;
   visibility: visible;
 }
-
-
+#team .social_links a:hover {
+  color: #151515;
+  background: #ffc451;
+}
 
 /* counter css  */
