@@ -323,6 +323,21 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   overflow: hidden;
 }
 
+#team p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #aaa;
+}
+
+#team p::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ffde9e;
+  margin: 4px 10px;
+}
+
 #team .card {
   position: relative;
   border: none;
@@ -334,13 +349,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   left: 16%;
   visibility: hidden;
   opacity: 0;
-  border-radius: 5px;
 }
 
-#team .social_links .fontS{
+#team .social_links .fontS {
   font-size: 18px;
-  
 }
+
 #team .social_links a {
   margin: 0 3px;
   border-radius: 4px;
@@ -363,4 +377,112 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   background: #ffc451;
 }
 
-/* counter css  */
+/* map part start  */
+
+#map {
+  overflow: hidden;
+}
+
+#map h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #aaa;
+  font-style: bold;
+}
+
+#map h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ffde9e;
+  margin: 4px 10px;
+}
+
+#map p {
+  font-family: "Poppis", sans-serif;
+  color: #151515;
+  font-size: 36px;
+}
+
+/* map part end  */
+
+/* Location part start  */
+
+#contact {
+  overflow: hidden;
+}
+
+#contact .info i {
+  font-size: 24px;
+  background: #ffc451;
+  color: #151515;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+#contact .info {
+  width: 100%;
+  background: #fff;
+  margin-top: 40px;
+}
+
+#contact h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #151515;
+  margin-top: -45px;
+}
+
+#contact p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #484848;
+}
+
+
+#contact form [type="submit"] {
+  background: #ffc451;
+  border: 0;
+  padding: 10px 24px;
+  color: #151515;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+/* Location part end  */
+
+
+/* Footer Part Start  */
+#footer {
+  overflow: hidden;
+  background: #000;
+
+}
+#footer .social_links{
+  margin-left: -5px;
+}
+#footer .social_links a {
+  margin: 0 3px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  background: #292929;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .social_links a:hover {
+  color: #151515;
+  background: #ffc451;
+}
+/* Footer Part End  */
