@@ -10,11 +10,9 @@
 body {
   font-family: "Raleway", sans-serif;
 }
-
-a {
+a{
   text-decoration: none;
 }
-
 ul {
   margin: 0;
   padding: 0;
@@ -85,15 +83,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #banner .icon-box a {
+  text-decoration: none;
   font-size: 20px;
   color: #fff;
-  font-weight: 700;
+}
+#banner .col-md-4{
+  width: 16.33333%;
 }
 
 #banner .icon-box i {
   font-size: 32px;
   color: #ffc451;
-  width: 16%;
 }
 /* #banner .icon-box h3 a :hover {
   color: #ffc451;
@@ -279,18 +279,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   color: #444;
 }
 
-#counts span .nFont{
+#counts span .nFont {
   font-size: 36px;
   color: #151515;
   font-family: "Open Sans", sans-serif;
   font: bold !important;
 }
-#counts .pText p{
+#counts .pText p {
   font-size: 14px;
   color: #3b3b3b;
   font-family: "Raleway", sans-serif;
 }
-
 
 #counts .listPart .icon {
   display: block;
@@ -302,30 +301,21 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 /* Counts Section part end */
 
-
-
-
 /* Testimonial part start  */
 
 #testimonial {
-overflow: hidden;
-background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(2, 2, 2, 0.4)) ,url("/assets/img/testimonials-bg.jpg") no-repeat center center / cover;
-height: 50vh;
-width: auto;
+  overflow: hidden;
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(2, 2, 2, 0.4)),
+    url("/assets/img/testimonials-bg.jpg") no-repeat center center / cover;
+  height: 50vh;
+  width: auto;
 }
-#testimonial .text-center{
+#testimonial .text-center {
   color: red;
   margin-bottom: 5px;
 }
 
-
-
-
 /* Testimonial part end  */
-
-
-
-
 
 /* team start */
 
@@ -339,16 +329,30 @@ width: auto;
 
 #team .social_links {
   position: absolute;
-  top: 36%;
-  left: 28%;
+  top: 61%;
+  left: 16%;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+  border-radius: 5px;
+}
+#team .social_links a {
+  margin: 0 3px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #484848;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #team .card:hover .social_links {
   opacity: 1;
   visibility: visible;
 }
+
+
 
 /* counter css  */
