@@ -447,7 +447,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   color: #484848;
 }
 
-
 #contact form [type="submit"] {
   background: #ffc451;
   border: 0;
@@ -459,14 +458,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 /* Location part end  */
 
-
 /* Footer Part Start  */
 #footer {
   overflow: hidden;
-  background: #000;
-
+  background: black;
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 0px 60px 0px;
 }
-#footer .social_links{
+#footer .social_links {
   margin-left: -5px;
 }
 #footer .social_links a {
@@ -484,5 +484,42 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 #footer .social_links a:hover {
   color: #151515;
   background: #ffc451;
+}
+#footer h3 {
+  margin-top: 40px;
+  font-size: 28px;
+  font-family: "Raleway", sans-serif;
+}
+#footer p {
+  font-family: "Raleway", sans-serif;
+}
+
+#footer .footer-top {
+  background: #151515;
+  border-bottom: 1px solid #222222;
+  padding: 45px 0 45px 0;
+}
+
+#footer .usefulService p {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  padding-bottom: 12px;
+}
+
+#footer .usefulService a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 2;
+}
+
+#footer .icon_right {
+  color: #ffc451;
+}
+
+#footer .usefulService a:hover {
+  color: #ffc451;
 }
 /* Footer Part End  */
