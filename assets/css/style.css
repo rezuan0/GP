@@ -178,6 +178,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 #service {
   overflow: hidden;
 }
+#service h5::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ffde9e;
+  margin: 4px 10px;
+}
 
 #service h5 {
   font-size: 14px;
@@ -329,7 +337,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   color: #aaa;
 }
 
-#team p::after {
+#team .-part::after {
   content: "";
   width: 120px;
   height: 1px;
@@ -345,7 +353,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 #team .social_links {
   position: absolute;
-  top: 60%;
+  top: 58%;
   left: 16%;
   visibility: hidden;
   opacity: 0;
@@ -375,6 +383,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 #team .social_links a:hover {
   color: #151515;
   background: #ffc451;
+}
+
+#team .card-body h4 {
+  font-style: 18px;
+  font-family: "RRaleway", sans-serif;
+  color: #151515;
 }
 
 /* map part start  */
@@ -500,7 +514,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 45px 0 45px 0;
 }
 
-#footer .usefulService p {
+#footer .usefulService p,
+h4 {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -513,6 +528,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 14px;
   color: #fff;
   line-height: 2;
+  text-decoration: none;
 }
 
 #footer .icon_right {
@@ -522,4 +538,60 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 #footer .usefulService a:hover {
   color: #ffc451;
 }
+
+#footer form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+}
+
+#footer .footer-top form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+}
+#footer .footer-top form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  color: black;
+}
+#footer .footer-top form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  padding: 0 20px;
+  background: #ffc451;
+  color: #151515;
+  border-radius: 0 4px 4px 0;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .credits a {
+  color: #ffc451;
+  text-decoration: none;
+}
+#footer .credits a:hover {
+  color: #ffde9e;
+  text-decoration: none;
+}
+
 /* Footer Part End  */
+
+/* scrool button  */
+
