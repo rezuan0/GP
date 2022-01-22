@@ -36,7 +36,7 @@ h6 {
   height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("../img/hero-bg.jpg") no-repeat center center / cover;
+    url("../img/hero-bg.jpg") no-repeat center center / cover fixed;
   text-align: center;
 }
 
@@ -264,6 +264,34 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 /* call to action part end */
+
+/* Portfolio part Start  */
+
+#portfolio {
+  overflow: hidden;
+}
+
+#portfolio h2 {
+  color: #aaa;
+  font-size: 14px;
+  font-family:"Poppins", sans-serif;
+}
+
+#portfolio h2::after{
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ffde9e;
+  margin: 4px 10px;
+}
+#portfolio .headPa{
+  color: #151515;
+  font-size: 36px;
+  font-family: "Poppins"sans-serif;
+}
+
+/* Portfolio part End  */
 
 /* Counts Section part start  */
 
@@ -593,5 +621,42 @@ h4 {
 
 /* Footer Part End  */
 
-/* scrool button  */
+/* scroll button start  */
 
+#button {
+  overflow: hidden;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  background: #ffc451;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+#button .top-icon {
+  font-size: 25px;
+  color: #151515;
+  text-align: center;
+}
+
+#button :hover {
+  background: #151515;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  color: #ffc451;
+}
+#button .top-icon:hover {
+  color: #ffc451 !important;
+  font-size: 25px;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* scrool button end */
