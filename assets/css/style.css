@@ -10,9 +10,7 @@
 body {
   font-family: "Raleway", sans-serif;
 }
-a {
-  text-decoration: none;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -29,13 +27,22 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
+/* Navbar part Start  */
+
+#navbar{
+  overflow: hidden;
+  position: fixed;
+}
+/* Navbar part End  */
+
 /* banner part start  */
 
 #banner {
   overflow: hidden;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("../img/hero-bg.jpg") no-repeat center center / cover fixed;
   text-align: center;
 }
@@ -49,6 +56,16 @@ h6 {
 
 #banner .dots {
   color: #ffc451;
+  border-radius: 50px;
+}
+
+#banner h3{
+  font-size: 28px;
+  font-family: "Raleway",sans-serif;
+  color: #fff;
+}
+#banner .icon-box h3 a:hover{
+color: #ffc451;
 }
 
 #banner p {
@@ -57,29 +74,15 @@ h6 {
   font-size: 24px;
 }
 
-/* #banner .banner_box {
-  width: 80%;
-  display: flex;
-  margin: 0 auto;
-}
-
-#banner .box_item {
-  width: 16%;
-  margin: 0 .5rem;
-  border: 1px solid yellow;
-
-
-  padding: 30px 20px;
-transition: ease-in-out 0.3s;
-border: 1px solid rgba(255, 255, 255, 0.3);
-} */
-/* banner part end  */
-
-/* Banner part start  */
 #banner .icon-box {
   margin: 0.2em;
-  padding: 30px 20px;
+  padding: 30px 40px 30px 40px;
+  transition: .3s;
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#banner .icon-box:hover{
+  border: 1px solid #ffc451;
 }
 
 #banner .icon-box a {
@@ -88,19 +91,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
 }
 #banner .col-md-4 {
-  width: 16.33333%;
+  width: 18.33333%;
+  height: 18.33333%;
 }
 
 #banner .icon-box i {
   font-size: 32px;
   color: #ffc451;
-}
-/* #banner .icon-box h3 a :hover {
-  color: #ffc451;
-  border: #ffc451;
-} */
-#banner .icon-box :hover {
-  border: #ffc451;
 }
 
 /* Banner part End  */
@@ -111,9 +108,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #aboutUs .header h3 {
-  font-size: 28px;
+  font-size: 30px;
   color: #444;
   font-weight: 700;
+  line-height: 34px;
 }
 #aboutUs .header p {
   color: #444;
@@ -124,12 +122,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 #aboutUs ul {
   font-family: "Open Sans", sans-serif;
   color: rgb(82, 82, 82);
+  line-height: 25px;
 }
 
 #aboutUs .paragraph p {
   font-family: "Open Sans", sans-serif;
   color: #444;
-  padding: 0 0 8px 26px;
+  line-height: 25px;
+  font-size: 16px;
 }
 
 #aboutUs img {
@@ -217,29 +217,39 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 #service .box {
   border: 1px solid #ebebeb;
   padding: 80px 20px;
+  margin: 12px 4px;
   background: #fff;
+  transition: all ease-in-out 0.3s;
 }
 
 #service a {
   color: #151515;
   font-size: 24px;
+  text-decoration: none;
 }
 
 #service p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #444;
+  line-height: 24px;
+}
+#service a:hover {
+  color: #ffc451;
 }
 /* service part end  */
 
 /* call to action part start */
 #callAction {
   overflow: hidden;
+  margin-top: 5px;
   height: 50vh;
   width: 100%;
-  background: linear-gradient(rgba(2, 2, 2, 0.3), rgba(2, 2, 2, 0.7)),
-    url("/assets/img/cta-bg.jpg") no-repeat center center / cover;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/img/cta-bg.jpg") no-repeat center center / cover fixed;
   text-align: center;
+  padding: 60px;
+
 }
 
 #callAction h3 {
@@ -260,8 +270,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 1px 30px;
   border-radius: 4px;
   border: 2px solid #fff;
-  color: yellow;
   text-align: center;
+  transition: .5s;
+  text-decoration: none;
+}
+#callAction .actionBtn:hover {
+  color: #151515;
+  background: #ffc451;
+  border-color: #ffc451;
 }
 /* call to action part end */
 
@@ -274,10 +290,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 #portfolio h2 {
   color: #aaa;
   font-size: 14px;
-  font-family:"Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-#portfolio h2::after{
+#portfolio h2::after {
   content: "";
   width: 120px;
   height: 1px;
@@ -285,10 +301,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   background: #ffde9e;
   margin: 4px 10px;
 }
-#portfolio .headPa{
+#portfolio .headPa {
   color: #151515;
   font-size: 36px;
-  font-family: "Poppins"sans-serif;
+  font-family: "Poppins" sans-serif;
 }
 
 /* Portfolio part End  */
