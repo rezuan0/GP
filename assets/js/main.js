@@ -3,6 +3,7 @@
 $(".number").counterUp({ time: 3000 });
 
 // ===== Scroll to Top ====
+
 var btn = $("#button");
 
 $(window).scroll(function () {
@@ -16,4 +17,18 @@ $(window).scroll(function () {
 btn.on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "300");
+});
+
+
+// NavBar Color After Scrolling 
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 100) {
+      $("#navbar").css("background", "rgba(0, 0, 0, 0.8)");
+    } else {
+      $("#navbar").css("background","none");
+    }
+  });
 });
