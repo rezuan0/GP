@@ -29,80 +29,165 @@ h6 {
 
 /* Navbar part Start  */
 
-#navbar {
-  overflow: hidden;
-  position: fixed;
-  height:12vh;
-  width: 100%;
-  justify-content: space-between !important;
-  opacity: 1;
-  z-index: 9999999;
+#header {
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 997;
 }
 
-#navbar a {
+#header a{
   text-decoration: none;
-  font-weight: bold;
 }
 
-#navbar h2 {
-  font-size: 32px;
-  font-family: "Raleway", sans-serif;
-  color: white;
-  line-height: 32px;
+#header .logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
 }
 
-#navbar .dots {
-  color: #ffbb38;
-  font-size: 40px;
-}
-
-#navbar nav ul {
-  color: #fff;
-  font-size: 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#navbar nav ul li a {
-  color: #fff;
-  font-size: 15px;
-  font-family: "Open Sans", sans-serif;
-  margin: 0px 0px 0px 30px;
-}
-
-#navbar nav ul li a:hover {
-  color: #ffbb38;
+#header .logo a {
+    color: #fff;
 }
 
 
+.book-a-table-btn:hover {
+    background: #cda45e;
+    color: #fff;
+}
 
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
 
+.navbar li {
+    position: relative;
+    margin-top: 20px;
+}
 
+.navbar a,
+.navbar a:focus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    color: #fff;
+    white-space: nowrap;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 14px;
+}
 
+.navbar a i,
+.navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
 
-#navbar .getButton a {
-  font-size: 14px;
-  position: absolute;
-  top: 20%;
-  left: 82%;
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+    color: #ffc451;
+}
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+    min-width: 200px;
+}
+.navbar ul li a{
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.navbar .dropdown ul a {
+    padding: 0px 30px;
+    color: #151515;
+    line-height: 20px;
+    margin: 0px -8px 15px -10px ;
+  }
+
+.navbar .dropdown ul a i {
+    font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+    color: #ffc451;
+    transition: 0.3s;
+}
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+    top: 0;
+    
+    visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+}
+
+#header .btn{
   color: #fff;
   border: 2px solid #ffc451;
-  padding: 7px 25px 7px 25px;
-  border-radius: 4px;
+  margin: 5px 5px;
 }
 
-#navbar .getButton a:hover {
-  color: #343a40;
-  background-color: #ffbb38;
+#header .btn:hover{
+  background-color: #ffc451;
+  color: #151515;
 }
 
-#navbar .links .icon {
-  font-size: 13px;
-}
 
 /* Navbar part End  */
+
+
+
+
+
+
 
 /* banner part start  */
 
@@ -466,6 +551,12 @@ h6 {
   position: relative;
   border: none;
 }
+#team .card-body h4{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Raleway", sans-serif;
+}
 
 #team .social_links {
   position: absolute;
@@ -489,6 +580,7 @@ h6 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
 }
 
 #team .card:hover .social_links {

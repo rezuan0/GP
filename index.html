@@ -35,52 +35,117 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+
+    <!-- AOS Animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- custom css  -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
     <!-- Navber Part Start  -->
 
-    <section id="navbar">
-      <div class="container d-flex">
+    <!-- <section id="navbar">
+      <div class="container-fluid">
         <div>
           <a href="#">
-            <h2><b>GP</b><span class="dots">.</span></h2>
+            <h1><b>GP</b><span class="dots">.</span></h1>
           </a>
         </div>
-        <nav class="links">
+        <nav class="navabr">
+
           <ul class="d-flex">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li>
-              <a href="#"
-                ><span>Drop Down</span>
-                <span class="iconify icon" data-icon="ep:arrow-down-bold"></span
-              ></a>
-              <ul class="dropdown">
-                <li><a href="#">Drop Down 1</a></li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <li><a class="active" href="#hero">Home</a></li>
+          <li><a  href="#about">About</a></li>
+          <li><a  href="#services">Services</a></li>
+          <li><a  href="#portfolio">Portfolio</a></li>
+          <li><a  href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul >
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul class="d-flex">
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
         </nav>
         <div class="getButton">
           <a href="#">Get Started</a>
         </div>
       </div>
+    </section> -->
+
+    <section>
+      <header id="header" class="fixed-top d-flex align-items-cente">
+        <div
+          class="container container-xl d-flex align-items-center justify-content-lg-between"
+        >
+          <h1 class="logo me-auto me-lg-0">
+            <a href="index.html"><b>GP</b><span>.</span></a>
+          </h1>
+
+          <nav class="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#aboutUs">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              
+              <li><a href="#team">Team</a></li>
+              <li class="dropdown">
+                <a href="#"
+                  >Drop Down  <span class="iconify" data-icon="entypo:chevron-right" data-rotate="90deg"></span> </i
+                ></a>
+                <ul>
+                  <li><a href="#">Drop Down 1</a></li>
+                  <li class="dropdown">
+                    <a href="#"
+                      >Deep Drop Down  
+                      <span class="iconify" data-icon="entypo:chevron-right"></span></a>
+                    <ul>
+                      <li><a href="#">Deep Drop Down 1</a></li>
+                      <li><a href="#">Deep Drop Down 2</a></li>
+                      <li><a href="#">Deep Drop Down 3</a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Drop Down 2</a></li>
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#map">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- .navbar -->
+          <a 
+            href="#aboutUs"
+            class="  btn"
+            >Get Started</a
+          >
+        </div>
+      </header>
     </section>
 
     <!-- Navber Part End  -->
+
     <!-- Banner part start  -->
     <section id="banner">
       <div class="margin-top">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
           <div class="row">
             <div class="col-xl-12">
               <div class="banner_content">
@@ -133,7 +198,7 @@
       <div class="container mt-5">
         <div class="row">
           <!-- Left part  -->
-          <div class="col-xl-6">
+          <div class="col-xl-6" data-aos="fade-right" data-aos-duration="2000">
             <div class="header">
               <h3>
                 Voluptatem dignissimos provident quasi corporis voluptates sit
@@ -188,7 +253,7 @@
             </div>
           </div>
 
-          <div class="col-xl-6 fluid">
+          <div class="col-xl-6 fluid" data-aos="fade-left" data-aos-duration="2000">
             <img src="/assets/img/about.jpg" alt="" />
           </div>
         </div>
@@ -212,11 +277,11 @@
       <div class="container mt-5">
         <div class="row">
           <!-- Left Part  -->
-          <div class="col-xl-6">
+          <div class="col-xl-6" data-aos="fade-up-right" data-aos-duration="2000">
             <img src="/assets/img/features.jpg" alt="Clients" />
           </div>
           <!-- Right Part  -->
-          <div class="col-xl-6">
+          <div class="col-xl-6" data-aos="fade-up-left" data-aos-duration="2000">
             <div class="first d-flex">
               <div class="icon px-3">
                 <span class="iconify" data-icon="bx:bx-receipt"></span>
@@ -275,9 +340,12 @@
     <!-- services part start  -->
     <section id="service">
       <div class="container mt-5">
-        <h5 class="text-uppercase service">services</h5>
-        <h2 class="text-uppercase">Check our Services</h2>
-        <div class="mt-5">
+        <div data-aos="fade-up">
+          <h5 class="text-uppercase service">services</h5>
+          <h2 class="text-uppercase">Check our Services</h2>
+        </div>
+
+        <div class="mt-5" data-aos="zoom-in" data-aos-duration="2000">
           <!-- first row  -->
           <div class="row">
             <div class="col-xl-4">
@@ -381,7 +449,7 @@
     <br />
     <!-- call to action part start  -->
     <section id="callAction">
-      <div class="container">
+      <div class="container" data-aos="zoom-in" data-aos-duration="2000">
         <h3>Call To Action</h3>
         <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -401,8 +469,8 @@
 
     <!-- Portfolio part Start  -->
     <section id="portfolio">
-      <div class="container mt-5">
-        <div>
+      <div class="container mt-5" data-aos="zoom-in" data-aos-duration="2000">
+        <div data-aos="fade-up">
           <h2>portfolio</h2>
           <p class="headPa">Check our Portfolio</p>
         </div>
@@ -656,18 +724,21 @@
       </div>
     </section>
     <!-- Portfolio part End  -->
+    <br />
+    <br />
+    <br />
 
     <!-- Counts Section part Start  -->
     <section id="counts">
-      <div class="container mt-5">
+      <div class="container mt-5" >
         <div class="row">
           <div class="d-flex">
             <!-- Left part  -->
-            <div class="col-xl-5 space">
+            <div class="col-xl-5 space" data-aos="fade-right" data-aos-duration="2000">
               <img src="/assets/img/counts-img.jpg" alt="Counts Img" />
             </div>
             <!-- Right part  -->
-            <div class="col-xl-7">
+            <div class="col-xl-7" data-aos="fade-left">
               <div class="headPara space">
                 <h3>Voluptatem dignissimos provident quasi</h3>
                 <p class="hPara">
@@ -762,7 +833,7 @@
     <!-- Testimonial part Start  -->
 
     <section id="testimonial" class="mt-5">
-      <div class="container">
+      <div class="container" data-aos="zoom-in" data-aos-duration="2000">
         <div class="text-center">
           <h3>Slidebar not Updated</h3>
         </div>
@@ -773,7 +844,7 @@
 
     <!-- team part  -->
     <section id="team" class="py-5">
-      <div class="container mt-5">
+      <div class="container mt-5" data-aos="fade-up" data-aos-duration="2000">
         <div class="text-uppercase">
           <p class="-part">team</p>
           <h2>Check our Team</h2>
@@ -965,7 +1036,7 @@
 
     <!-- map part start -->
     <section id="map">
-      <div class="container md-5">
+      <div class="container md-5" data-aos="fade-up">
         <h2 class="text-uppercase">Contact</h2>
         <p class="text-uppercase">Contact Us</p>
         <iframe
@@ -1272,7 +1343,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
   </body>
