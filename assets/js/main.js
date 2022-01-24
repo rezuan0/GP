@@ -1,4 +1,4 @@
-// Aos Animation 
+// Aos Animation
 
 AOS.init();
 
@@ -23,8 +23,7 @@ btn.on("click", function (e) {
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
 
-
-// NavBar Color After Scrolling 
+// NavBar Color After Scrolling
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -32,7 +31,7 @@ $(document).ready(function () {
     if (scroll > 100) {
       $("#header").css("background", "rgba(0, 0, 0, 0.8)");
     } else {
-      $("#header").css("background","none");
+      $("#header").css("background", "none");
     }
   });
 });
